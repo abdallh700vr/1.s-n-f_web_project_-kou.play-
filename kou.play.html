@@ -12,11 +12,11 @@
 <body>
    <a id="goup" href="#"><i class="fa-solid fa-arrow-up"></i></a>
     <header class="back"> 
-        <a href="#"><img class="logo" src="image/KOU.PLAY.png" alt="logo" width="5%" ></a>
+        <a href="http://127.0.0.1:3002/proje.html"><img class="logo" src="image/KOU.PLAY.png" alt="logo" width="5%" ></a>
         <nav>
         <ul class="nav_links">
             <li class="list2_1">
-                <a href="#">GAMES<i class="fa-solid fa-chevron-down" style="color: aqua; margin-left: 5px"></i></a>
+                <a href="#"><i class="fa-solid fa-gamepad" style="padding-right: 5px; "></i>GAMES<i class="fa-solid fa-chevron-down" style="color: aqua; margin-left: 5px"></i></a>
 
                 <div class="list2">
                     <ul>
@@ -31,7 +31,7 @@
                 </div>
             </li>
             <li><a href="#">RACES</a></li>
-            <li><a href="http://127.0.0.1:3000/topKous.html">TOP KOUS</a></li>
+            <li><a href="http://127.0.0.1:3002/topKous.html">TOP KOUS</a></li>
             <li><a href="#">HELP</a></li>
         </ul>
         </nav>
@@ -45,7 +45,7 @@
     <div class="homepage"></div>
 
     <div class="welcome">
-        <h4><span class="ic--baseline-groups"></span>7 KOUS ONLİNE</h4>
+        <h4><span class="ic--baseline-groups"></span><h4 id="h4"></h4></h4>
         <h3>WELCOME TO</h3><br>
         <h1>KOU.PLAY</h1><br>
         <P>The true immersive Rust gaming experience</P>
@@ -79,8 +79,33 @@
 </div>
 </article>
 
-<script>
+<footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/thodex05/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="">Yardım Merkezi</a></li>
+          <li><a href="#">Kullanım Şartları</a></li>
+          <li><a href="#">Gizlilik Politikası</a></li>
+          <li><a href="http://127.0.0.1:3002/geriOdeme.html">Geri ödeme politikası</a></li>
+          <li><a href="http://127.0.0.1:3002/ourTEAM.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">CAMPLERS</span></p>
+      </div>
+    </div>
+  </footer>
 
+<script>
+var UserInfo=3;
+document.getElementById("h4").innerHTML=`${UserInfo} KOUS ONLİNE`
 </script>
 
 </body>
