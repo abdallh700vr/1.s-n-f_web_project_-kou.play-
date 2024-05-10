@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+
+    background-image: url(/image/bg.9ba40558.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 1087px;
+    filter: brightness(70%);
+}
+
+#todo_main
+{
+backdrop-filter: blur(8px);
+border: 3px solid aquamarine;
+position: absolute;
+width: 800px;
+height: 800px;
+top: 150px;
+left: 560px;
+overflow: auto;
+border-radius: 10%;
+}
+
+#h1{
+    height: 80px;
+}
+#h1 h1{
+    text-align: center;
+    color: rgb(0, 255, 213);
+    position: relative;
+    top: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+#input_button
+{
+height: 150px;
+display: flex;
+justify-content: center;
+/* background-color: aliceblue; */
+
+}
+
+#input_button input{
+    height: 50px;
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+    top: 25%;
+    border: 3px solid aquamarine;
+    color: aqua;
+    font-size: 25px;
+    overflow: hidden;
+    background: transparent;
+}
+#input_button input:focus{
+    border: 3px solid aquamarine;
+}
+
+
+#input_button button{
+    width: 70px;
+    height: 50px;
+    border-radius: 20%;
+    border: 3px solid aquamarine;
+    background: transparent;
+    position: relative;
+    left: 30px;
+    top: 27%;
+    color: aquamarine;
+    background: transparent;
+}
+#submit:hover{
+    transition: 1s ease-in-out;
+    box-shadow:0px 0px 10px 10px rgb(7, 255, 243);
+}
+
+#list_ul{
+    list-style: none;
+    color: aquamarine;
+    height: 500px;
+    text-align: left;
+    
+}
+
+#list_ul li{
+margin-top: 10px;
+border: 3px solid aquamarine;
+height: 70px;
+position: relative;
+font-size: 30px;
+border-radius: 40px;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#list_ul li h3{
+    
+position: relative;
+left: 30px;
+top: 20%;
+width: 70%;
+overflow: hidden;
+overflow-y: hidden;
+}
+
+
+#list_ul li button
+{
+color: red;
+height: 60px;
+width: 60px;
+position: relative;
+bottom: 35px;
+background: transparent;
+border: none;
+border-left: 2px solid aquamarine;
+border-radius: 10px;
+}
+
+
+@media all and (max-width: 600px)
+{
+    #main{
+        background-image: none;
+        background-color: gray;
+        height: 1002px;
+        width: 460px;
+    }
+
+    #todo_main{
+        top: 10px;
+       left: 60px;
+       width: 300px;
+    }
+ 
+}
